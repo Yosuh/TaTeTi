@@ -1,0 +1,85 @@
+:root{
+    --line-style: 5px solid;
+    --font-family: sans-serif;
+}
+img{
+
+    margin:auto;
+    max-width: 150px;
+}
+body{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    user-select: none; 
+}
+
+h1{ 
+    text-align: center;
+    font-size: xx-large;
+    font-family: --font-family;
+    color: blue;
+}
+
+dialog{
+    text-align: center;
+    min-width:23%;
+    min-height: 5%;
+    background-color: blue;
+    padding: 5rem;
+    border: unset;
+    border-radius: 30px;
+    font-size: x-large;
+    font-family: --font-family;
+}
+
+dialog h2{
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+dialog button{
+    color: blue;
+    padding: 1rem;
+    font-size: x-large;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(2px);
+}
+
+#contGrilla{ 
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    justify-content: center;
+}
+
+.cuadrado{ 
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    cursor: pointer;
+    color: blue ;
+}
+
+
+.medio{
+    border-left: var(--line-style);
+    border-right: var(--line-style);
+    color: yellow;
+}
+
+.arriba{
+    border-bottom: var(--line-style);
+}
+
+.abajo{
+    border-top: var(--line-style);
+}
+
+.ganador{
+    background-color:yellow;
+}
